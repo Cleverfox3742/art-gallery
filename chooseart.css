@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+	background-image: url(Choosebg.png);
+	height: 100vh;
+	background-position: center;
+	background-size: cover
+}
+.text{
+	text-decoration: none;
+	text-decoration-style: none;
+}
+ul{
+	text-decoration:none;
+	text-decoration-style: none;
+	list-style-type: none;
+}
+.button2 {
+	float: right;
+	text-decoration-style: none;
+	text-decoration: none;
+	list-style: none;
+	margin-right: 500px;
+	margin-top: 400px;
+    color: rgb(149, 45, 45);
+    font-family: 'Shadows Into Light';
+    font-size: 20px;
+}
+.button1 {
+    float: left;
+	text-decoration-style: none;
+	text-decoration: none;
+	margin-left: 350px;
+	margin-top: 400px;
+    color: rgb(149, 45, 45);
+    font-family: 'Shadows Into Light';
+    font-size: 20px;
+}
+.button3 {
+    float: left;
+	text-decoration-style: none;
+	text-decoration: none;
+	margin-left: 15px;
+	margin-top: 400px;
+    color: rgb(149, 45, 45);
+    font-family: 'Shadows Into Light';
+    font-size: 20px;
+}
+.button3 {
+	border: 1px solid #fff;
+	border-radius: 120px;
+	display: inline-block;
+    background-size: cover;
+}
+.button3 a:hover {
+	background: #fff;
+}
+.button3 {
+	border: 1px solid #fff;
+	border-radius: 120px;
+	padding: 5px 50px;
+	display: inline-block;
+	
+}
+.button2 {
+    border: 1px;
+    border-radius: 3px;
+    border-color: #fff;
+}
+ 
+.button1 {
+	border: 1px solid #fff;
+	border-radius: 120px;
+	display: inline-block;
+    background-size: cover;
+    
+	
+}
+.button1 a:hover {
+	background: #fff;
+}
+
+.button1 {
+	border: 1px solid #fff;
+	border-radius: 120px;
+	padding: 5px 50px;
+	display: inline-block;
+	
+}
+.button2 a:hover {
+	background: #fff;
+}
+.button2 {
+    border: 1px;
+    border-radius: 3px;
+    border-color: #fff;
+}
+ 
+.button2 {
+	border: 1px solid #fff;
+	border-radius: 120px;
+	display: inline-block;
+	
+}
+.button2 a:hover {
+	background: #fff;
+}
+
+.button2 {
+	border: 1px solid #fff;
+	border-radius: 120px;
+	padding: 5px 50px;
+	display: inline-block;
+	
+}
+.button2 a:hover {
+	background: #fff;
+}
+.text {
+	margin-left: 30px;
+	margin-top: 5px;
+	color:#fff;
+	position: absolute;
+    top: 40%;
+    left: 48.5%;
+    transform: translate(-50%,-50%);
+    color: white;
+	font-family: 'Shadows Into Light', cursive;
+	font-size: 130px;
+}
+.h{
+	display: inline-block;
+}
+.h{
+
+   float: right;
+   list-style-type: none;
+   margin-top: -50px;
+   width: auto;
+   height: 30pt;
+   margin-left: 600px;
+   font-size: 30px;
+   font-family: 'Shadows Into Light', cursive;
+   -webkit-text-stroke: 0.01px black;
+   color: white;
+   text-shadow:
+       0.01px 0.01px 0 #000,
+     -0.01px -0.01px 0 #000,  
+      0.01px -0.01px 0 #000,
+      -0.01px 0.01px 0 #000,
+       0.01px 0.01px 0 #000;
+	   position: absolute;
+
+}
+
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 100px;
+	  font-family: 'Shadows Into Light', cursive;
+	  position: absolute;
+    top: 50%;
+    left: 47%;
+    transform: translate(-50%,-50%);
+    color: white;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+.h li{
+
+  display: inline-block;
+
+}
+.h li a{
+  text-decoration: none;
+  color: #fff;
+  padding: 1px 3px;
+  border: 1px solid transparent;
+
+}
+.h li a:hover{
+    background-color: pink;
+    color: purple;
+
+}
+
+.h li.active a{
+    background-color: rgb(192, 230, 255);
+    color: rgb(128, 0, 11);
+}
+.word{
+    position: absolute;
+    bottom: 50px; right: 50px;
+    font-size: 45px;
+    animation: morph 15s infinite ease-in-out;
+
+}
+.word:nth-child(1){
+    animation-delay: -15s;
+}
+.word:nth-child(2){
+    animation-delay: -11s;
+}
+.word:nth-child(3){
+    animation-delay: -8s;
+}
+.word:nth-child(4){
+    animation-delay: -4s;
+}
+.word:nth-child(5){
+    animation-delay: -2s;
+}
+@keyframes morph{
+    0%, 5%, 100%{
+        filter: blur(0px);
+        opacity: 1;
+    }
+    20%, 80%{
+        filter: blur(35px);
+        opacity: 0;
+    }
+}
