@@ -1,0 +1,882 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+    display: none;
+    -ms-overflow-style: none;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #ecb4bc;
+    background: #ecb4bc;
+  }
+  
+
+  ::-webkit-scrollbar-thumb {
+    background: #ecb4bc;
+  }
+html, body{
+    overflow-x: hidden;
+}
+header{
+   
+    background-image: url(dinahbg.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    float: center;
+
+}
+.l1 {
+    margin-left:600px;
+    margin-top: 10px;
+    color: #fff;
+    padding: 0px;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 50px;
+    -webkit-text-stroke-width: 0.008px;
+    -webkit-text-stroke-color: black;
+  
+}
+.l2 {
+    float: center;
+    margin-top: 900px;
+    margin-left:  700px;
+    color: #fff;
+    padding: 0px;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 50px;
+    -webkit-text-stroke-width: 0.008px;
+    -webkit-text-stroke-color: black;
+  
+}
+.l3 {
+    float: center;
+    margin-top: 800px;
+    margin-left: 600px;
+    color: #fff;
+    padding: 0px;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 50px;
+    -webkit-text-stroke-width: 0.008px;
+    -webkit-text-stroke-color: black;
+  
+}
+.h{
+	display: inline-block;
+}
+.h{
+
+    float: right;
+   list-style-type: none;
+  margin-top: -2000px;
+   width: auto;
+  height: 30pt;
+  margin-right: 135px;
+  font-size: 30;
+  font-family: 'Shadows Into Light', cursive;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: black;
+
+}
+.h li{
+
+ display: inline-block;
+
+}
+.h li a{
+text-decoration: none;
+color: #fff;
+padding: 1px 3px;
+border: 1px solid transparent;
+
+}
+.h li a:hover{
+
+    background-color: pink;
+
+    color: purple;
+
+}
+
+.h li.active a{
+
+    background-color: rgb(192, 230, 255);
+     color: rgb(128, 0, 11);
+}
+.container{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-wrap: wrap;
+}
+.container .card{
+    position: relative;
+    width: 280;
+    height: 350px;
+    margin: 30px;
+}
+.container .card:nth-of-type(2){
+    transform: rotate(5deg);
+}
+.container .card .image{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    transform: translate(10px, 10px);
+}
+.container .card::before{
+    content: "";
+    position: absolute;
+    top: -1850px;
+    left: 90;
+    width: 255px;
+    height: 330px;
+    border: 25px solid #fff;
+    z-index: 1;
+    box-shadow: 7px 7px 21px #bdbdbd, -7px -7px 21px
+    #ffffff;
+    background: transparent;
+}
+.container .card:nth-of-type(1)::before{
+    filter: url(#wavy1);
+}
+.container .card:nth-of-type(2)::before{
+    filter: url(#wavy2);
+}
+.container .card:nth-of-type(3)::before{
+    filter: url(#wavy3);
+}
+.image1{
+    background-image: 
+url("https://res.cloudinary.com/dswp5qfpm/image/upload/v1597476074/animal/rabbit_vq9gli.jpg");
+}
+.image2{
+    background-image: 
+url("https://res.cloudinary.com/dswp5qfpm/image/upload/v1597476074/animal/rabbit_vq9gli.jpg");
+}
+.image3{
+    background-image: 
+url("https://res.cloudinary.com/dswp5qfpm/image/upload/v1597476074/animal/rabbit_vq9gli.jpg");
+}
+svg{
+    width: 0;
+    height: 0;
+}
+.container .card .info{
+    position: absolute;
+    top: -1850px;
+    left: 70px;
+    width: 100%;
+    height: 100%;
+    padding: 50px 30px 30px 30px;
+    transform: translate(10px, 10px);
+    color: #fff;
+    line-height: 1.4;
+    opacity: 0;
+    transition-duration: 1s;
+}
+
+.container .card:hover .info{
+    opacity: 1;
+}
+.container2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.container2 .card2{
+    position: relative;
+    width: 280;
+    height: 350px;
+    margin: 30px;
+}
+.container2 .card2:nth-of-type(2){
+    transform: rotate(5deg);
+}
+.container2 .card2 .image2{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    transform: translate(10px, 10px);
+}
+.container2 .card2::before{
+    content: "";
+    position: absolute;
+    top: -2265;
+    left: -30px;
+    width: 255px;
+    height: 330px;
+    border: 25px solid #fff;
+    z-index: 1;
+    box-shadow: 7px 7px 21px #bdbdbd, -7px -7px 21px
+    #ffffff;
+    background: transparent;
+}
+.container2 .card2:nth-of-type(1)::before{
+    filter: url(#wavy1);
+}
+.container2 .card2:nth-of-type(2)::before{
+    filter: url(#wavy2);
+}
+.container2 .card2:nth-of-type(3)::before{
+    filter: url(#wavy3);
+}
+.image1{
+    background-image: 
+url("https://res.cloudinary.com/dswp5qfpm/image/upload/v1597476074/animal/rabbit_vq9gli.jpg");
+}
+.image2{
+    background-image: 
+url("https://res.cloudinary.com/dswp5qfpm/image/upload/v1597476074/animal/rabbit_vq9gli.jpg");
+}
+.image3{
+    background-image: 
+url("https://res.cloudinary.com/dswp5qfpm/image/upload/v1597476074/animal/rabbit_vq9gli.jpg");
+}
+svg{
+    width: 0;
+    height: 0;
+}
+.container2 .card2 .info2{
+    position: absolute;
+    top: -2175;
+    left: -30px;
+    width: 100%;
+    height: 100%;
+    padding: 50px 30px 30px 30px;
+    transform: translate(10px, 10px);
+    color: #fff;
+    line-height: 1.4;
+    opacity: 0;
+    transition-duration: 1s;
+}
+
+.container2 .card2:hover .info2{
+    opacity: 1;
+}
+.container3{
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    flex-wrap: wrap;
+}
+.container3 .card3{
+    position: relative;
+    width: 280;
+    height: 350px;
+    margin: 30px;
+}
+.container3 .card3:nth-of-type(2){
+    transform: rotate(5deg);
+}
+.container3 .card3 .image3{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    transform: translate(10px, 10px);
+}
+.container3 .card3::before{
+    content: "";
+    position: absolute;
+    top: -2675;
+    left: -150;
+    width: 255px;
+    height: 330px;
+    border: 25px solid #fff;
+    z-index: 1;
+    box-shadow: 7px 7px 21px #bdbdbd, -7px -7px 21px
+    #ffffff;
+    background: transparent;
+}
+.container3 .card3:nth-of-type(1)::before{
+    filter: url(#wavy1);
+}
+.container3 .card3:nth-of-type(2)::before{
+    filter: url(#wavy2);
+}
+.container3 .card3:nth-of-type(3)::before{
+    filter: url(#wavy3);
+}
+.image1{
+    background-image: 
+url("https://res.cloudinary.com/dswp5qfpm/image/upload/v1597476074/animal/rabbit_vq9gli.jpg");
+}
+.image2{
+    background-image: 
+url("https://res.cloudinary.com/dswp5qfpm/image/upload/v1597476074/animal/rabbit_vq9gli.jpg");
+}
+.image3{
+    background-image: 
+url("https://res.cloudinary.com/dswp5qfpm/image/upload/v1597476074/animal/rabbit_vq9gli.jpg");
+}
+svg{
+    width: 0;
+    height: 0;
+}
+.container3 .card3 .info3{
+    position: absolute;
+    top: -2605;
+    left: -150px;
+    width: 100%;
+    height: 100%;
+    padding: 50px 30px 30px 30px;
+    transform: translate(10px, 10px);
+    color: #fff;
+    line-height: 1.4;
+    opacity: 0;
+    transition-duration: 1s;
+}
+
+.container3 .card3:hover .info3{
+    opacity: 1;
+}
+.container4{
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    flex-wrap: wrap;
+}
+.container4 .card4{
+    position: relative;
+    width: 280;
+    height: 350px;
+    margin: 30px;
+}
+.container4 .card4:nth-of-type(2){
+    transform: rotate(5deg);
+}
+.container4 .card4 .image4{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    transform: translate(10px, 10px);
+}
+.container4 .card4::before{
+    content: "";
+    position: absolute;
+    top: -2600;
+    left: -350;
+    width: 335px;
+    height: 250px;
+    border: 25px solid #fff;
+    z-index: 1;
+    box-shadow: 7px 7px 21px #bdbdbd, -7px -7px 21px
+    #ffffff;
+    background: transparent;
+}
+.container4 .card4:nth-of-type(1)::before{
+    filter: url(#wavy1);
+}
+.container4 .card4:nth-of-type(2)::before{
+    filter: url(#wavy2);
+}
+.container4 .card4:nth-of-type(3)::before{
+    filter: url(#wavy3);
+}
+.image1{
+    background-image: 
+url("https://res.cloudinary.com/dswp5qfpm/image/upload/v1597476074/animal/rabbit_vq9gli.jpg");
+}
+.image2{
+    background-image: 
+url("https://res.cloudinary.com/dswp5qfpm/image/upload/v1597476074/animal/rabbit_vq9gli.jpg");
+}
+.image3{
+    background-image: 
+url("https://res.cloudinary.com/dswp5qfpm/image/upload/v1597476074/animal/rabbit_vq9gli.jpg");
+}
+svg{
+    width: 0;
+    height: 0;
+}
+.container4 .card4 .info4{
+    position: absolute;
+    top: -2670;
+    left: -350px;
+    width: 100%;
+    height: 100%;
+    padding: 50px 30px 30px 30px;
+    transform: translate(10px, 10px);
+    color: #fff;
+    line-height: 1.4;
+    opacity: 0;
+    transition-duration: 1s;
+}
+
+.container4 .card4:hover .info4{
+    opacity: 1;
+}
+.container5{
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    flex-wrap: wrap;
+}
+.container5 .card5{
+    position: relative;
+    width: 280;
+    height: 350px;
+    margin: 30px;
+}
+.container5 .card5:nth-of-type(2){
+    transform: rotate(5deg);
+}
+.container5 .card5 .image5{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    transform: translate(10px, 10px);
+}
+.container5 .card5::before{
+    content: "";
+    position: absolute;
+    top: -3010;
+    left: -950;
+    width: 335px;
+    height: 250px;
+    border: 25px solid #fff;
+    z-index: 1;
+    box-shadow: 7px 7px 21px #bdbdbd, -7px -7px 21px
+    #ffffff;
+    background: transparent;
+}
+.container5 .card5:nth-of-type(1)::before{
+    filter: url(#wavy1);
+}
+.container5 .card5:nth-of-type(2)::before{
+    filter: url(#wavy2);
+}
+.container5 .card5:nth-of-type(3)::before{
+    filter: url(#wavy3);
+}
+.image1{
+    background-image: 
+url("https://res.cloudinary.com/dswp5qfpm/image/upload/v1597476074/animal/rabbit_vq9gli.jpg");
+}
+.image2{
+    background-image: 
+url("https://res.cloudinary.com/dswp5qfpm/image/upload/v1597476074/animal/rabbit_vq9gli.jpg");
+}
+.image3{
+    background-image: 
+url("https://res.cloudinary.com/dswp5qfpm/image/upload/v1597476074/animal/rabbit_vq9gli.jpg");
+}
+svg{
+    width: 0;
+    height: 0;
+}
+.container5 .card5 .info5{
+    position: absolute;
+    top: -3040;
+    left: -955px;
+    width: 100%;
+    height: 100%;
+    padding: 50px 30px 30px 30px;
+    transform: translate(10px, 10px);
+    color: #fff;
+    line-height: 1.4;
+    opacity: 0;
+    transition-duration: 1s;
+}
+
+.container5 .card5:hover .info5{
+    opacity: 1;
+}
+.container6{
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    flex-wrap: wrap;
+}
+.container6 .card6{
+    position: relative;
+    width: 280;
+    height: 350px;
+    margin: 30px;
+}
+.container6 .card6:nth-of-type(2){
+    transform: rotate(5deg);
+}
+.container6 .card6 .image6{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    transform: translate(10px, 10px);
+}
+.container6 .card6::before{
+    content: "";
+    position: absolute;
+    top: -2950;
+    left: -950;
+    width: 335px;
+    height: 250px;
+    border: 25px solid #fff;
+    z-index: 1;
+    box-shadow: 7px 7px 21px #bdbdbd, -7px -7px 21px
+    #ffffff;
+    background: transparent;
+}
+.container6 .card6:nth-of-type(1)::before{
+    filter: url(#wavy1);
+}
+.container6 .card6:nth-of-type(2)::before{
+    filter: url(#wavy2);
+}
+.container6.card6:nth-of-type(3)::before{
+    filter: url(#wavy3);
+}
+.image1{
+    background-image: 
+url("https://res.cloudinary.com/dswp5qfpm/image/upload/v1597476074/animal/rabbit_vq9gli.jpg");
+}
+.image2{
+    background-image: 
+url("https://res.cloudinary.com/dswp5qfpm/image/upload/v1597476074/animal/rabbit_vq9gli.jpg");
+}
+.image3{
+    background-image: 
+url("https://res.cloudinary.com/dswp5qfpm/image/upload/v1597476074/animal/rabbit_vq9gli.jpg");
+}
+svg{
+    width: 0;
+    height: 0;
+}
+.container6 .card6 .info6{
+    position: absolute;
+    top: -2985;
+    left: -955px;
+    width: 100%;
+    height: 100%;
+    padding: 50px 30px 30px 30px;
+    transform: translate(10px, 10px);
+    color: #fff;
+    line-height: 1.4;
+    opacity: 0;
+    transition-duration: 1s;
+}
+
+.container6 .card6:hover .info6{
+    opacity: 1;
+}
+.container7{
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    flex-wrap: wrap;
+}
+.container7 .card7{
+    position: relative;
+    width: 280;
+    height: 350px;
+    margin: 30px;
+}
+.container7 .card7:nth-of-type(2){
+    transform: rotate(5deg);
+}
+.container7 .card7 .image7{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    transform: translate(10px, 10px);
+}
+.container7 .card7::before{
+    content: "";
+    position: absolute;
+    top: -3355;
+    left: -450;
+    width: 335px;
+    height: 250px;
+    border: 25px solid #fff;
+    z-index: 1;
+    box-shadow: 7px 7px 21px #bdbdbd, -7px -7px 21px
+    #ffffff;
+    background: transparent;
+}
+.container7 .card7:nth-of-type(1)::before{
+    filter: url(#wavy1);
+}
+.container7 .card7:nth-of-type(2)::before{
+    filter: url(#wavy2);
+}
+.container7.card7:nth-of-type(3)::before{
+    filter: url(#wavy3);
+}
+.image1{
+    background-image: 
+url("https://res.cloudinary.com/dswp5qfpm/image/upload/v1597476074/animal/rabbit_vq9gli.jpg");
+}
+.image2{
+    background-image: 
+url("https://res.cloudinary.com/dswp5qfpm/image/upload/v1597476074/animal/rabbit_vq9gli.jpg");
+}
+.image3{
+    background-image: 
+url("https://res.cloudinary.com/dswp5qfpm/image/upload/v1597476074/animal/rabbit_vq9gli.jpg");
+}
+svg{
+    width: 0;
+    height: 0;
+}
+.container7 .card7 .info7{
+    position: absolute;
+    top: -3390;
+    left: -460px;
+    width: 100%;
+    height: 100%;
+    padding: 50px 30px 30px 30px;
+    transform: translate(10px, 10px);
+    color: #fff;
+    line-height: 1.4;
+    opacity: 0;
+    transition-duration: 1s;
+}
+
+.container7 .card7:hover .info7{
+    opacity: 1;
+}
+.container8{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.container8 .card8{
+    position: relative;
+    width: 280;
+    height: 350px;
+    margin: 30px;
+}
+.container8 .card8:nth-of-type(2){
+    transform: rotate(5deg);
+}
+.container8 .card8 .image8{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    transform: translate(10px, 10px);
+}
+.container8 .card8::before{
+    content: "";
+    position: absolute;
+    top: -3400;
+    left: -30px;
+    width: 255px;
+    height: 330px;
+    border: 25px solid #fff;
+    z-index: 1;
+    box-shadow: 7px 7px 21px #bdbdbd, -7px -7px 21px
+    #ffffff;
+    background: transparent;
+}
+.container8 .card8:nth-of-type(1)::before{
+    filter: url(#wavy1);
+}
+.container8 .card8:nth-of-type(2)::before{
+    filter: url(#wavy2);
+}
+.container8 .card8:nth-of-type(3)::before{
+    filter: url(#wavy3);
+}
+.image1{
+    background-image: 
+url("https://res.cloudinary.com/dswp5qfpm/image/upload/v1597476074/animal/rabbit_vq9gli.jpg");
+}
+.image2{
+    background-image: 
+url("https://res.cloudinary.com/dswp5qfpm/image/upload/v1597476074/animal/rabbit_vq9gli.jpg");
+}
+.image3{
+    background-image: 
+url("https://res.cloudinary.com/dswp5qfpm/image/upload/v1597476074/animal/rabbit_vq9gli.jpg");
+}
+svg{
+    width: 0;
+    height: 0;
+}
+.container8 .card8 .info8{
+    position: absolute;
+    top: -3400;
+    left: -30px;
+    width: 100%;
+    height: 100%;
+    padding: 50px 30px 30px 30px;
+    transform: translate(10px, 10px);
+    color: #fff;
+    line-height: 1.4;
+    opacity: 0;
+    transition-duration: 1s;
+}
+
+.container8 .card8:hover .info8{
+    opacity: 1;
+}
+
+.container9{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.container9 .card9{
+    position: relative;
+    width: 280;
+    height: 350px;
+    margin: 30px;
+}
+.container9 .card9:nth-of-type(2){
+    transform: rotate(5deg);
+}
+.container9 .card9 .image9{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    transform: translate(10px, 10px);
+}
+.container9 .card9::before{
+    content: "";
+    position: absolute;
+    top: -3300;
+    left: -300px;
+    width: 255px;
+    height: 330px;
+    border: 25px solid #fff;
+    z-index: 1;
+    box-shadow: 7px 7px 21px #bdbdbd, -7px -7px 21px
+    #ffffff;
+    background: transparent;
+}
+.container9 .card9:nth-of-type(1)::before{
+    filter: url(#wavy1);
+}
+.container9 .card9:nth-of-type(2)::before{
+    filter: url(#wavy2);
+}
+.container9 .card9:nth-of-type(3)::before{
+    filter: url(#wavy3);
+}
+.image1{
+    background-image: 
+url("https://res.cloudinary.com/dswp5qfpm/image/upload/v1597476074/animal/rabbit_vq9gli.jpg");
+}
+.image2{
+    background-image: 
+url("https://res.cloudinary.com/dswp5qfpm/image/upload/v1597476074/animal/rabbit_vq9gli.jpg");
+}
+.image3{
+    background-image: 
+url("https://res.cloudinary.com/dswp5qfpm/image/upload/v1597476074/animal/rabbit_vq9gli.jpg");
+}
+svg{
+    width: 0;
+    height: 0;
+}
+.container9 .card9 .info9{
+    position: absolute;
+    top: -3300;
+    left: -300px;
+    width: 100%;
+    height: 100%;
+    padding: 50px 30px 30px 30px;
+    transform: translate(10px, 10px);
+    color: #fff;
+    line-height: 1.4;
+    opacity: 0;
+    transition-duration: 1s;
+}
+
+.container9 .card9:hover .info9{
+    opacity: 1;
+}
+.container0{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.container0 .card0{
+    position: relative;
+    width: 280;
+    height: 350px;
+    margin: 30px;
+}
+.container0 .card0:nth-of-type(2){
+    transform: rotate(5deg);
+}
+.container0 .card0 .image0{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    transform: translate(10px, 10px);
+}
+.container0 .card0::before{
+    content: "";
+    position: absolute;
+    top: -3705;
+    left: 100px;
+    width: 255px;
+    height: 330px;
+    border: 25px solid #fff;
+    z-index: 1;
+    box-shadow: 7px 7px 21px #bdbdbd, -7px -7px 21px
+    #ffffff;
+    background: transparent;
+}
+.container0 .card0:nth-of-type(1)::before{
+    filter: url(#wavy1);
+}
+.container0 .card0:nth-of-type(2)::before{
+    filter: url(#wavy2);
+}
+.container0 .card0:nth-of-type(3)::before{
+    filter: url(#wavy3);
+}
+.image1{
+    background-image: 
+url("https://res.cloudinary.com/dswp5qfpm/image/upload/v1597476074/animal/rabbit_vq9gli.jpg");
+}
+.image2{
+    background-image: 
+url("https://res.cloudinary.com/dswp5qfpm/image/upload/v1597476074/animal/rabbit_vq9gli.jpg");
+}
+.image3{
+    background-image: 
+url("https://res.cloudinary.com/dswp5qfpm/image/upload/v1597476074/animal/rabbit_vq9gli.jpg");
+}
+svg{
+    width: 0;
+    height: 0;
+}
+.container0 .card0 .info0{
+    position: absolute;
+    top: -3705;
+    left: 100px;
+    width: 100%;
+    height: 100%;
+    padding: 50px 30px 30px 30px;
+    transform: translate(10px, 10px);
+    color: #fff;
+    line-height: 1.4;
+    opacity: 0;
+    transition-duration: 1s;
+}
+
+.container0 .card0:hover .info0{
+    opacity: 1;
+}
